@@ -10,31 +10,31 @@ const settings = {
 //Home Page
 const greeting = {
   title: "Hello 👋.",
-  title2: "Harikrushn",
-  logo_name: "harry.k()",
-  nickname: "harry / picleric",
-  full_name: "Harikrushn Kanani",
-  subTitle: "Backend Developer, Open Source Enthusiast 🔥. Always learning.",
+  title2: "Elisha",
+  logo_name: "{eotobi.dev}",
+  nickname: "otobi / eotobi",
+  full_name: "Elisha Osotsi Otobi",
+  subTitle: "Python Developer, React Developer 🔥. Never stop improving yourself.",
   resumeLink:
-    "https://drive.google.com/file/d/1Ty0-51DZ72PE30kfJ2p1jjw9SHYCnDAi/view?usp=sharing",
-  mail: "mailto:hkanani191@gmail.com",
+    "https://docs.google.com/document/d/1uFlVQ_Ipu2WuCBvGWezbFwzGTTgD-oQM/edit?usp=drive_link&ouid=100565124817048503324&rtpof=true&sd=true",
+  mail: "mailto:eotobi@gmail.com",
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "https://github.com/harikanani",
-  linkedin: "https://www.linkedin.com/in/harikrushn-kanani/",
-  gmail: "hkanani191@gmail.com",
-  gitlab: "https://gitlab.com/harikanani",
-  // facebook: "https://www.facebook.com/harikrishan.kanani/",
-  twitter: "https://twitter.com/Harikrushn9",
-  instagram: "https://www.instagram.com/hari_kanani_/",
+  github: "https://github.com/eotobi",
+  linkedin: "https://www.linkedin.com/in/elisha-otobi-889577195/",
+  gmail: "eotobi@gmail.com",
+  gitlab: "https://gitlab.com/eotobi",
+  // facebook: "https://www.facebook.com/elisha.otobi/",
+  twitter: "https://twitter.com/eotoby",
+  // instagram: "https://www.instagram.com/elisha_otobi_/",
 };
 
 const skills = {
   data: [
     {
-      title: "Backend Development",
+      title: "Fullstack Developer",
       fileName: "FullStackImg",
       skills: [
         "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
@@ -274,11 +274,11 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "Shantilal Shah Engineering College",
-      subtitle: "Bachelor in Information Technology",
+      title: "Masinde Muliro University of Science and Technology",
+      subtitle: "Bachelor of Science (Information Technology)",
       logo_path: "ssec.png",
       alt_name: "SSEC",
-      duration: "2021 - Present",
+      duration: "2016 - 2020",
       descriptions: [
         "⚡ I'm currently pursuing my bachelors in Information Technology.",
         // "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
@@ -292,7 +292,7 @@ const degrees = {
       subtitle: "Diploma in Information Technology",
       logo_path: "ssgandhy.png",
       alt_name: "SSGC",
-      duration: "2018 - 2021",
+      duration: "2012 - 2015",
       descriptions: [
         "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
         "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
