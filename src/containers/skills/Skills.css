@@ -1,83 +1,99 @@
+/* ===== Skills Section ===== */
+
+.skills-section {
+  padding: 80px 24px;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-family: "Inter", "Google Sans Bold", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.7;
+}
+
 .skills-main-div {
   display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
 }
 
-.skills-header {
-  font-size: 60px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
-  text-align: center;
-}
-
-.skills-text {
-  font-size: 20px;
+.skills-main-div:last-child {
+  margin-bottom: 0;
 }
 
 .skills-text-div {
-  margin-left: 50px;
-  margin-top: 3%;
-  padding-top: 80px;
-  font-family: "Google Sans Regular";
+  flex: 1;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
 }
 
-.skills-main-div > * {
+.skills-image-div {
   flex: 1;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
-  margin-top: 100px;
 }
 
 .skills-heading {
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  padding-bottom: 10px;
-  font-family: "Google Sans Regular";
+  font-family: "Inter", "Google Sans Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.01em;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
-  .skills-header {
-    font-size: 50px;
-  }
+.skills-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 8px 0;
 }
-@media (max-width: 768px) {
-  .skills-heading {
-    font-size: 30px;
-    text-align: center;
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .skills-section {
+    padding: 60px 20px;
   }
-  .skills-header {
-    font-size: 30px;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
+
   .skills-main-div {
     flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
+    gap: 30px;
+    margin-bottom: 60px;
     text-align: center;
   }
-  .skills-image-div {
-    order: 2;
+
+  .skills-heading {
+    font-size: 1.6rem;
   }
-  .skills-image-div > * {
-    margin-top: 0px;
+
+  .skills-text {
+    font-size: 0.95rem;
+  }
+
+  .skills-image-div {
+    order: -1;
+    max-width: 320px;
   }
 }

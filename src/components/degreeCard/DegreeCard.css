@@ -1,90 +1,54 @@
-.degree-card {
+/* ===== Degree Card ===== */
+
+.degree-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.degree-header {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-title {
-  font-family: "Google Sans Medium";
-  font-size: 23px;
-  margin-left: 10px;
-}
-
-.card-subtitle {
-  font-family: "Google Sans Medium";
-  font-size: 18px;
-  margin-top: 7px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.body-header {
-  max-width: inherit;
-  display: flex;
-  border-radius: 7px 7px 0px 0px;
-  padding: 10px;
-}
-
-.body-header-title {
+  justify-content: space-between;
   align-items: flex-start;
-  width: 80%;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
-.body-header-duration {
-  width: 20%;
-}
-.duration {
-  font-family: "Google Sans Regular";
-  font-size: 16px;
-  padding-right: 10px;
-  float: right;
+.degree-title {
+  font-family: "Inter", "Google Sans Bold", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
 }
 
-.body-content {
-  max-width: inherit;
-  border-radius: 0px 0px 7px 7px;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
+.degree-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  margin: 0;
 }
 
-.content-list {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: "Google Sans Regular";
+.degree-duration {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.degree-descriptions {
+  margin-top: 8px;
+}
+
+.degree-desc-item {
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 4px 0;
 }
 
 @media (max-width: 768px) {
-  .degree-card {
+  .degree-header {
     flex-direction: column;
-  }
-
-  .body-header {
-    flex-direction: column;
-  }
-
-  .body-header-title {
-    width: 100%;
-  }
-
-  .body-header-duration {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  .duration {
-    padding: 0px;
-    margin: 0px;
-    float: left;
-  }
-
-  .card-title {
-    font-size: 20px;
-  }
-
-  .card-subtitle {
-    font-size: 16px;
+    align-items: center;
+    gap: 4px;
   }
 }

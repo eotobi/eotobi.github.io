@@ -1,95 +1,79 @@
+/* ===== Social Media Icons ===== */
+
 .social-media-div {
-  font-size: 2em;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 1rem;
 }
 
-.icon-button i {
-  color: white;
-}
 .icon-button {
-  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-button i {
-  border-radius: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: all 0.3s ease;
   cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 2.6rem;
-  margin-bottom: 10px;
 }
 
-.linkedin i {
-  background-color: #0e76a8;
-  transition: all 0.2s ease-in-out;
-}
-
-.linkedin i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #0e76a8;
+.icon-button i:hover {
+  transform: translateY(-3px);
 }
 
 .github i {
   background-color: #333;
-  transition: all 0.2s ease-in-out;
 }
-
 .github i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #333;
+  box-shadow: 0 6px 20px rgba(51, 51, 51, 0.4);
 }
 
 .gitlab i {
-  background-color: #ffcc52;
-  transition: all 0.2s ease-in-out;
+  background-color: #e24329;
+}
+.gitlab i:hover {
+  box-shadow: 0 6px 20px rgba(226, 67, 41, 0.4);
 }
 
-.gitlab i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #333;
+.linkedin i {
+  background-color: #0077b5;
+}
+.linkedin i:hover {
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
 }
 
 .google i {
   background-color: #ea4335;
-  transition: all 0.2s ease-in-out;
 }
-
 .google i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #ea4335;
+  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.4);
 }
 
 .twitter i {
   background-color: #1da1f2;
-  transition: all 0.2s ease-in-out;
 }
-
 .twitter i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #1da1f2;
+  box-shadow: 0 6px 20px rgba(29, 161, 242, 0.4);
 }
 
 .instagram i {
-  background-color: #e4405f;
-  transition: all 0.2s ease-in-out;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
-
 .instagram i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #e4405f;
+  box-shadow: 0 6px 20px rgba(225, 48, 108, 0.4);
 }
 
-/* Media Query */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .social-media-div {
-    text-align: center;
+    justify-content: center;
   }
 }

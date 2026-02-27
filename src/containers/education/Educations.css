@@ -1,18 +1,15 @@
+/* ===== Educations ===== */
+
 .educations-header {
-  font-size: 40px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
+  font-family: "Inter", "Google Sans Bold", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
   text-align: center;
+  margin: 0 0 32px 0;
+  letter-spacing: -0.01em;
 }
 
-@media (max-width: 1380px) {
-  .educations-header {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 768px) {
-  .educations-header {
-    font-size: 30px;
-  }
+.educations-body-div {
+  max-width: 900px;
+  margin: 0 auto;
 }

@@ -1,137 +1,110 @@
 import React from "react";
 import "./DegreeCard.css";
-import { Fade, Flip } from "react-reveal";
-import { style } from "glamor";
+import styled from "styled-components";
+
+const DegreeCardWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+  padding: 28px;
+  border: 1px solid ${(props) => props.theme.cardBorder};
+  border-radius: 16px;
+  background: ${(props) => props.theme.projectCard};
+  box-shadow: 0 2px 12px ${(props) => props.theme.cardShadow};
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px ${(props) => props.theme.cardShadow};
+    border-color: ${(props) => props.theme.accentColor};
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    gap: 20px;
+  }
+`;
+
+const DegreeImgWrapper = styled.div`
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid ${(props) => props.theme.cardBorder};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.sectionBg};
+`;
+
+const VisitButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  background: ${(props) => props.theme.accentGradient};
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px ${(props) => props.theme.cardShadow};
+    color: #fff;
+    text-decoration: none;
+  }
+`;
 
 function DegreeCard(props) {
   const degree = props.degree;
   const theme = props.theme;
 
-  const style_img = style({
-    width: "220px",
-    height: "auto",
-    borderRadius: " 50%",
-    padding: "10px",
-    border: `1px solid ${theme.accentColor}`,
-    marginRight: "50px",
-    boxShadow: `0px 0px 5px ${theme.accentColor}`,
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-    "@media (max-width: 768px)": {
-      marginLeft: "50px",
-      marginBottom: "15px",
-      width: "175px",
-    },
-  });
-
-  const card_body = style({
-    borderBottom: `1px solid ${theme.accentColor}`,
-    borderLeft: `1px solid ${theme.accentColor}`,
-    borderRight: `1px solid ${theme.accentColor}`,
-    borderRadius: "7px",
-    width: "90%",
-    margin: "10px",
-    boxShadow: `0px 1px 5px ${theme.accentColor}`,
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-    "@media (max-width: 768px)": {
-      width: "100%",
-    },
-  });
-
-  const button_visit = style({
-    textDecoration: "none",
-    color: "rgba(255, 255, 255, 1)",
-    background: `${theme.accentColor}`,
-    padding: "15px 15px",
-    marginTop: "25px",
-    borderRadius: "4px",
-    borderWidth: "0px",
-    marginBottom: "20px",
-    width: "200px",
-    height: "50px",
-    fontWeight: "bold",
-    fontFamily: "Google Sans Regular",
-    fontSize: "17px",
-    transition: "all 0.2s ease-in-out",
-    cursor: "pointer",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 10px ${theme.accentColor}`,
-    },
-  });
-
   return (
-    <div className="degree-card">
-      <Flip left duration={2000}>
-        <div {...style_img}>
-          <img
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              transform: "scale(-50%, -50%)",
-            }}
-            src={require(`../../assests/images/${degree.logo_path}`)}
-            alt={degree.alt_name}
-          />
-        </div>
-      </Flip>
-      <Fade right duration={2000} distance="40px">
-        <div {...card_body}>
-          <div
-            className="body-header"
-            style={{ backgroundColor: theme.accentColor }}
-          >
-            <div className="body-header-title">
-              <h2 className="card-title" style={{ color: "#FFFFFF" }}>
-                {degree.title}
-              </h2>
-              <h3 className="card-subtitle" style={{ color: "#FFFFFF" }}>
-                {degree.subtitle}
-              </h3>
-            </div>
-            <div className="body-header-duration">
-              <h3 className="duration" style={{ color: "#FFFFFF" }}>
-                {degree.duration}
-              </h3>
-            </div>
+    <DegreeCardWrapper>
+      <DegreeImgWrapper>
+        <img
+          style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
+          src={require(`../../assests/images/${degree.logo_path}`)}
+          alt={degree.alt_name}
+        />
+      </DegreeImgWrapper>
+      <div className="degree-content">
+        <div className="degree-header">
+          <div>
+            <h3 className="degree-title" style={{ color: theme.text }}>
+              {degree.title}
+            </h3>
+            <p className="degree-subtitle" style={{ color: theme.secondaryText }}>
+              {degree.subtitle}
+            </p>
           </div>
-          <div classname="body-content">
-            {degree.descriptions.map((sentence) => {
-              return (
-                <p className="content-list" style={{ color: theme.text }}>
-                  {sentence}
-                </p>
-              );
-            })}
-            <a
-              href={degree.website_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", textAlign: "center" }}
-            >
-              <p
-                {...button_visit}
-                style={{
-                  marginRight: "23px",
-                  textDecoration: "none",
-                  float: "right",
-                  backgroundColor: theme.accentColor,
-                }}
-              >
-                Visit Website
-              </p>
-            </a>
-          </div>
+          <span className="degree-duration" style={{ color: theme.secondaryText }}>
+            {degree.duration}
+          </span>
         </div>
-      </Fade>
-    </div>
+        <div className="degree-descriptions">
+          {degree.descriptions.map((sentence, index) => (
+            <p key={index} className="degree-desc-item" style={{ color: theme.secondaryText }}>
+              {sentence}
+            </p>
+          ))}
+        </div>
+        <VisitButton
+          href={degree.website_link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit Website
+        </VisitButton>
+      </div>
+    </DegreeCardWrapper>
   );
 }
 

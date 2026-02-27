@@ -1,15 +1,21 @@
+/* ===== Projects Page ===== */
+
 .projects-main {
   width: 100%;
   text-align: center;
 }
 
 .basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 0;
 }
 
 .projects-heading-div {
   display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 20px;
 }
 
 .projects-heading-div > * {
@@ -17,12 +23,9 @@
 }
 
 .projects-heading-img-div {
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.projects-heading-text-div {
-  text-align: center;
 }
 
 .projects-heading-img-div > * {
@@ -30,76 +33,74 @@
   height: auto;
 }
 
-.projects-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+.projects-heading-text-div {
+  text-align: left;
 }
 
-.projects-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+.projects-heading-text {
+  font-family: "Inter", "Google Sans Bold", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
 }
 
 .projects-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .repo-cards-div-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
 }
 
-@media (max-width: 1380px) {
-  .projects-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .projects-heading-sub-text {
-    font-size: 25px;
-  }
+.general-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 12px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .projects-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
+.general-btn:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
 
-  .projects-heading-sub-text {
-    font-size: 20px;
-  }
-
+@media (max-width: 900px) {
   .projects-heading-div {
     flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
 
-  .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-    line-height: normal;
+  .projects-heading-text-div {
     text-align: center;
   }
 
+  .projects-heading-img-div {
+    max-width: 300px;
+  }
+
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
+    grid-template-columns: 1fr;
+    padding: 0 16px;
   }
 }
