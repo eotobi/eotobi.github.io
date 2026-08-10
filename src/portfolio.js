@@ -12,9 +12,9 @@ const greeting = {
   logo_name: "{eotobi.dev}",
   nickname: "otobi / eotobi",
   full_name: "Elisha Osotsi Otobi",
-  subTitle: "Python Developer, React Developer 🔥. Never stop improving yourself.",
+  subTitle: "Data Analyst, Automation Engineer & Full-Stack Developer | Turning Agricultural Data into Digital Solutions 🔥. Never stop improving yourself.",
   resumeLink:
-    "https://docs.google.com/document/d/1uFlVQ_Ipu2WuCBvGWezbFwzGTTgD-oQM/edit?usp=drive_link&ouid=100565124817048503324&rtpof=true&sd=true",
+    "https://drive.google.com/file/d/1xpaTtQjRvDB6vbmXCipleUz7jstDJ5kR/view?usp=sharing",
   mail: "mailto:eotobi@gmail.com",
 };
 
@@ -32,237 +32,144 @@ const socialMediaLinks = {
 const skills = {
   data: [
     {
-      title: "Fullstack Developer",
-      fileName: "FullStackImg",
+      title: "Data Management & Governance",
+      fileName: "DataManagementImg",
       skills: [
-        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Developing mobile applications using Flutter and Android",
-        "⚡ Creating application backend in Node, Express & Flask",
-        "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+        "⚡ Managing the full data lifecycle: collection, storage, transformation, quality assurance and reporting",
+        "⚡ Designing digital data-collection tools and maintaining reliable datasets across multiple production sites",
+        "⚡ Managing data across Excel, Smartsheet, SQL databases, Power BI Lakehouse and Data Warehouse environments",
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
+          skillName: "Microsoft Excel",
+          iconUrl:
+            "https://res-1.cdn.office.net/files/fabric-cdn-prod_20221209.001/assets/brand-icons/product/svg/excel_32x1.svg",
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
+          skillName: "Smartsheet",
+          iconUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAjVBMVEX///8UMlju7/EAADstNlsOMFfe4uYsPmAAKFIAKlMAJFAAHUwAG0sAIE4AAD4AIU4AE0j3+PkAAELKztUAF0oAD0aDjJ2/xM3W2d+0usSJkaKXnq1GVXJrdoxda4N6hZgKE0IaIk48QmUhMVk6SGlyfZBVY31DTmyrsbyjqLUjOl8AC0dTW3VpboV2eI0hywSzAAAE40lEQVR4nO2ba3erKhCGxbPHAGq8Jmo05pyzc2vS7v//83aTegHRJO1C9APvp66A+KwBh2GGGoaWlpaWlpaWlpaWlpaWOpn//pKo/9ZyoP5BIE3xTgrTDUqWwJbEJBPKkcUkEco5yGKSB2Vvg9lB2VtpSNKg6Lt5H86y5gNFi6+5M/+fDxRZVCyH37OBIjVKfl3MBQrc5GusFGA2UH7FZO7xbKDCTTXUxkFzgYprpsxBc4Gip2qgYEHmAkVOZjVQ6aGZQMGyhsgomgkU0KwexoW5QPn1IjcOLpoJlHesRznbaCZQsK8JAkRmAgWrtB5kZ9e/TQ1l5/UYEW5AJ4ZyP5oxLmQmUAC11zRyv/11UijAST1CimAmUE57Pi8pwzolFN4356lkyRpwQiiAqHm+IGzDhFB+4w3YVT4tFH5vJs9c8SacDoo2rtzYUa5lOiiniQ0YX64Aitj+yiF9Lbdgs81knNRBeeiYZ0leIiq2fU5e4zaNzO+0jQZFwl21ZtJDCN1W5LXpFfPUbR4LCu9bSxjJpTuHQJo9z8idLvFIUHRhss3RokPltS7KxIIdx4HCRWdU6xdHRdr9xdh4wtyOAgXY7HaIOHv4WdNggbjgRoGia0ugSmLGkGVrqK1oqLGmz9nn3YTqut1K4mYjNlJPNNRYCx3AxRnfJTjWLpJxB8EWC0hjOk9wcr6Pda1a3HbTSwV3MC7U5yx1ageVQ6JMOajoM9SoUBDztqpcd9y+MXL7mMbdkCE+c72S8PNHph4UHPt363FDF+jknm+zhdsVFa16nxo7nmKOBjelhFtRp4GwZuwgz+WX1RaHraES2uOjVEChZcT3K5u/g/5PTwUUeec6HtuIJrkOPTN+jG6/sR2DdlMsBlaUCii49JcVEzGOUgfFJgxYHYdWlBIouPS9Ih1cUWrOfV6fqd4HV5QaKKBCyCecP5VDoZ7rD9vew6BKKPEllj/46amCQt14zzg8MpQiKCC8r7IujwylKuuy4gOrjf2wtyIocmRNFQyFB2qhEGZSC0YeP+6sCspjLvuIaZaJoNC1nb+s/7jAQO1FbzsKFHOy6SbupoOCJhccLZ/2XSiCQqSOiz+eGUqdpZBXbYBsZWhyKKBfXdc9uZ/JoFB4n7/AfmooBCdlUPjuqt76HCchHCmcpNwWfAXqXlYP+iLOuNxwKSGFUPcbUonoOCHeBXzYAIU6KFzyBdCa6Vak4QIsKGQwvVgwCg1TcJz0cl//FluVIMdn75MIdY3eOulEuB6rvXfLzCtWCUXKgvcH9NKc6a0FMP0UQiE+kQ+ros0LGZu2loXlXNb9SWXUXfAxclu/8eTc/v4+FA4PnUguaT5A4fCjBoo4ZSoM0nhQP+t5xdhQcL1kPe7RxNUEhpHYODIUxKcBS9QJhqWU/fgbULAKz4PvzO++FfZybu+/CkWc4vxonPx2SrU3j7rIhiLXS/JkZt6WlNriNzAWFNjk44UFbK3/yFnmL0ARh+4kGUASFNh2eZb3ryevyho+ywG2nXWqHunz3BQOEFF/cZDjn7+vqA8KqOuWiZRcxY+UCZU74jjFrm8zUSf+vgqhlBZ5Kmez+LnquB+AeCEtN898pBLdisFAqId/n9aRNemkNQr2tn+9vO/eonnw3GUVu3NqzmHKtLS0tLS0tLS0tLS0tL6vv3zPUC9RYbFnAAAAAElFTkSuQmCC",
         },
         {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#FFFFFF",
-            color: "#F7DF1E",
-          },
+          skillName: "Microsoft Access",
+          iconUrl: "https://img.icons8.com/color/96/microsoft-access-2019.png",
         },
         {
-          skillName: "PHP",
-          fontAwesomeClassname: "simple-icons:php",
-          style: {
-            color: "#7377AD",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#439743",
-          },
-        },
-        // {
-        //   skillName: "GraphQL",
-        //   fontAwesomeClassname: "simple-icons:graphql",
-        //   style: {
-        //     color: "#DE33A6",
-        //   },
-        // },
-        {
-          skillName: "Android",
-          fontAwesomeClassname: "simple-icons:android",
-          style: {
-            color: "#3DDC84",
-          },
-        },
-        {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#f89820",
-          },
-        },
-        // {
-        //   skillName: "Flutter",
-        //   fontAwesomeClassname: "simple-icons:flutter",
-        //   style: {
-        //     color: "#02569B",
-        //   },
-        // },
-        // {
-        //   skillName: "Dart",
-        //   fontAwesomeClassname: "simple-icons:dart",
-        //   style: {
-        //     color: "#29B0EE",
-        //   },
-        // },
-        // {
-        //   skillName: "Visual Basic",
-        //   fontAwesomeClassname: "simple-icons:dot-net",
-        //   style: {
-        //     color: "#029FCE",
-        //   },
-        // },
-        {
-          skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#4479A1",
-          },
-        },
-        // {
-        //   skillName: "jQuery",
-        //   fontAwesomeClassname: "simple-icons:jquery",
-        //   style: {
-        //     color: "#0865A6",
-        //   },
-        // },
-        {
-          skillName: "Wordpress",
-          fontAwesomeClassname: "simple-icons:wordpress",
-          style: {
-            color: "#207297",
-          },
-        },
-        {
-          skillName: "Apache",
-          fontAwesomeClassname: "simple-icons:apache",
-          style: {
-            color: "#CA1A22",
-          },
-        },
-        {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
-          style: {
-            color: "#3776AB",
-          },
+          skillName: "SQL Databases",
+          iconUrl: "https://img.icons8.com/color/96/database.png",
         },
       ],
     },
+
     {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
+      title: "Analytics & Visualisation",
+      fileName: "DataAnalyticsImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Experience hosting and managing websites",
-        "⚡ Experience with Continuous Integration",
+        "⚡ Developing operational dashboards and reports that turn production data into actionable insights",
+        "⚡ Building Power BI dashboards using DAX, advanced visualisations and structured data models",
+        "⚡ Supporting data-driven decision-making across agricultural production operations",
       ],
       softwareSkills: [
         {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
+          skillName: "Power BI",
+          iconUrl:
+            "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/1068058-Icon-PowerBI?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=96&hei=96&qlt=100&fit=constrainower-bi-icon.png",
         },
         {
-          skillName: "Netlify",
-          fontAwesomeClassname: "simple-icons:netlify",
-          style: {
-            color: "#38AFBB",
-          },
+          skillName: "Qlik Sense",
+          iconUrl: "https://cdn.simpleicons.org/qlik/009848",
         },
         {
-          skillName: "Heroku",
-          fontAwesomeClassname: "simple-icons:heroku",
-          style: {
-            color: "#6863A6",
-          },
+          skillName: "DAX",
+          iconUrl: "https://img.icons8.com/color/96/combo-chart--v1.png",
         },
         {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
+          skillName: "Microsoft Excel",
+          iconUrl: "https://img.icons8.com/color/96/microsoft-excel-2019--v1.png",
+        },
+      ],
+    },
+
+    {
+      title: "Automation & ETL",
+      fileName: "AutomationImg",
+      skills: [
+        "⚡ Automating repetitive business processes and data workflows using Power Automate, VBA and Python",
+        "⚡ Transforming, cleaning and consolidating data using Power Query and advanced Excel functions",
+        "⚡ Building reliable ETL processes that improve reporting speed, data quality and operational efficiency",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Power Automate",
+          iconUrl:
+            "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero_PAU_icon?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=96&hei=96&qlt=100&fit=constrain",
         },
         {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
+          skillName: "Power Query",
+          iconUrl: "https://img.icons8.com/color/96/data-configuration.png",
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
+          skillName: "VBA",
+          iconUrl: "https://img.icons8.com/color/96/code.png",
         },
         {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
+          skillName: "Python",
+          iconUrl: "https://cdn.simpleicons.org/python/3776AB",
+        },
+      ],
+    },
+
+    {
+      title: "Technical Development & AI",
+      fileName: "TechnicalDevelopmentImg",
+      skills: [
+        "⚡ Developing digital tools and user interfaces using React JS, Python and Django",
+        "⚡ Building database-driven applications and automation solutions using SQL and Python",
+        "⚡ Applying an AI-oriented approach to improve automation, data processing and operational decision-making",
+      ],
+      softwareSkills: [
+        {
+          skillName: "React JS",
+          iconUrl: "https://cdn.simpleicons.org/react/61DAFB",
         },
         {
-          skillName: "GitHub Actions",
-          fontAwesomeClassname: "simple-icons:githubactions",
-          style: {
-            color: "#5b77ef",
-          },
+          skillName: "Python",
+          iconUrl: "https://cdn.simpleicons.org/python/3776AB",
+        },
+        {
+          skillName: "Django",
+          iconUrl: "https://cdn.simpleicons.org/django/092E20",
+        },
+        {
+          skillName: "SQL Databases",
+          iconUrl: "https://img.icons8.com/color/96/database.png",
+        },
+      ],
+    },
+
+    {
+      title: "Leadership & Digital Transformation",
+      fileName: "LeadershipImg",
+      skills: [
+        "⚡ Leading a team of data analysts and coordinating data clerks across Kenya, Uganda, Stuttgart and Canaris",
+        "⚡ Providing day-to-day technical support, troubleshooting and practical digital solutions for operational teams",
+        "⚡ Driving digital transformation through the Kenya-based Data Center, supporting automation and data management initiatives",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Team Leadership",
+          iconUrl: "https://img.icons8.com/color/96/conference-call.png",
+        },
+        {
+          skillName: "Data Analytics",
+          iconUrl: "https://img.icons8.com/color/96/combo-chart--v1.png",
+        },
+        {
+          skillName: "Process Automation",
+          iconUrl: "https://img.icons8.com/color/96/process.png",
+        },
+        {
+          skillName: "Digital Transformation",
+          iconUrl: "https://img.icons8.com/color/96/artificial-intelligence.png",
         },
       ],
     },
@@ -274,30 +181,28 @@ const degrees = {
     {
       title: "Masinde Muliro University of Science and Technology",
       subtitle: "Bachelor of Science (Information Technology)",
-      logo_path: "ssec.png",
-      alt_name: "SSEC",
+      logo_path: "mmust.png",
+      alt_name: "MMUST",
       duration: "2016 - 2020",
       descriptions: [
-        "⚡ I'm currently pursuing my bachelors in Information Technology.",
-        // "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        // "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        // "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
+        "⚡ Attainned Second Class Honors Upper Division",
+        "⚡ Studied core subjects like Data Structures, DBMS, Networking, Security",
+        "⚡ Completed mandatory 3-month Industrial training at KenGen Kenya ar IT attache",
+        "⚡ Successfully implemented an Android App using Java and XML for my 3rd and 4th year Projects",
       ],
-      website_link: "http://www.ssgec.ac.in/",
+      website_link: "https://mmust.ac.ke/",
     },
     {
-      title: "Dr. S. & S. S. Ghandhy College Of Engineering & Technology",
-      subtitle: "Diploma in Information Technology",
-      logo_path: "ssgandhy.png",
-      alt_name: "SSGC",
+      title: "Butere Boys High School",
+      subtitle: "Kenya Certificate of Secondary Education",
+      logo_path: "images.jpg",
+      alt_name: "BBHS",
       duration: "2012 - 2015",
       descriptions: [
-        "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
-        "⚡ I have secured 9.82 CGPA.",
+        "⚡ Attained A- (minus)",
+        "⚡ Perfomed exemplary in Mathematics, Physics and Computer Studies.",
       ],
-      website_link: "http://www.ssgc.cteguj.in/",
+      website_link: "https://www.facebook.com/ButereBoyshighSchool/",
     },
   ],
 };
@@ -305,230 +210,106 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "M0001: MongoDB Basics",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
+      title: "Software Engineering",
+      subtitle: "ALX",
+      logo_path: "alx.png",
       certificate_link:
-        "https://drive.google.com/file/d/12se6bMep48WXA1PlizTBAgCnW0GXM6wq/view?usp=sharing",
-      alt_name: "MongoDB University",
+        "https://drive.google.com/...",
+      alt_name: "ALX Certification",
       // color_code: "#2AAFED",
       color_code: "#47A048",
     },
     {
-      title: "Hackathon",
-      subtitle: "Hack The Mountains",
-      logo_path: "hackathon1.svg",
+      title: "Yellow Belt",
+      subtitle: "Lean Six Sigma",
+      logo_path: "lss.png",
       certificate_link:
-        "https://drive.google.com/file/d/1Y-HT1flWDfeyfnfqVr3ubNgGIcnuUEYt/view?usp=sharing",
+        "https://drive.google.com/...",
       alt_name: "hackathon",
       color_code: "#E2405F",
     },
-    {
-      title: "A300: Atlas Security",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12u_tkvhgB-K2TIm-RDdJOwYbQ9ccqiqA/view?usp=sharing",
-      alt_name: "MongoDB University",
-      // color_code: "#F6B808",
-      color_code: "#47A048",
-    },
-    {
-      title: "Cyber Security & Cyber Forensics",
-      subtitle: "Workshop at IIT Bombay",
-      logo_path: "iit.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12uAdjQC5LfrB1ODdxqIY181ugyyQhl-I/view?usp=sharing",
-      alt_name: "Workshop",
-      color_code: "#2AAFED",
-    },
-    {
-      title: "MLH Local Hack Day: Build",
-      subtitle: "Major League Hacking",
-      logo_path: "mlh-logo.svg",
-      certificate_link:
-        "https://drive.google.com/file/d/1ws7g2Oepu76vDFir6SvR_emFAMSkB2ZQ/view?usp=sharing",
-      alt_name: "Google",
-      color_code: "#fe0037",
-    },
-    {
-      title: "Hack20",
-      subtitle: "Flutter International Hackathon",
-      logo_path: "flutter.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1JTd8pVlHbP0RVQYtfa4OZgJYGfdiCwM6/view?usp=sharing",
-      alt_name: "Flutter International Hackathon",
-      color_code: "#2AAFED",
-    },
-    {
-      title: "Postman Student Expert",
-      subtitle: "Postman",
-      logo_path: "postman.png",
-      certificate_link:
-        "https://badgr.com/public/assertions/h2qevHs4SlyoHErJQ0mn2g",
-      alt_name: "Postman",
-      // color_code: "#f36c3d",
-      color_code: "#fffbf3",
-    },
-    // color_code: "#8C151599",
-    // color_code: "#7A7A7A",
-    // color_code: "#0C9D5899",
-    // color_code: "#C5E2EE",
-    // color_code: "#ffc475",
-    // color_code: "#g",
-    // color_code: "#ffbfae",
-    // color_code: "#fffbf3",
-    // color_code: "#b190b0",
   ],
 };
 
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work, Internship and Industrial Attachement",
   description:
-    "I've completed one internship. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
+    "My experiences spans 5 years leading teams and data management operations in cuttings production and seeds companies",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
-        {
-          title: "Node.js Backend Developer",
-          company: "Valora Infotech",
-          company_url: "http://valorainfotech.com/",
-          logo_path: "valora.jpg",
-          duration: "Oct 2020 - Dec 2022",
-          location: "Surat, Gujarat",
-          description: `Train, oversee, and mentor young software development employees. I created and managed the admin panel backend and a gambling application as a Node.js backend developer. I obtained knowledge in Web Socket, Payment Gateway Integration, and gaming legislation, while growing my industry experience and investigating new technologies.
-          Focus on change request functions in close collaboration with the project manager and team leads.
-          Developed new and maintained existing applications.
-          Increased productivity and problem-solving technics by 20%.
-          We primarily used PERN and MERN Stack. 80% of my work was doing backend development and the remaining 20% was DevOps-related tasks.
+          {
+          title: "Data Analyst",
+          company: "Selecta One",
+          company_url: "https://selecta-one.com/en/",
+          logo_path: "selecta-one.svg",
+          duration: "2022 - 2023",
+          location: "Onsite - Kiambu, Kenya",
+          description: `Implemented data tools in Excel that support data entry, processing and visualization using
+          dashboards in Qlik Sense and Excel.
+          Presented weekly reports to stakeholders on various topics i.e. Quality of Products, IPM, Climate and Operations.
+          Major achievement was successfully migrating an 11-year-old Microsoft Access Tool that managed Operations Data for
+          Selecta Stutgart to an automated version in Qlik Sense.
           `,
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
         },
-        // {
-        //   title: "Node.js Backend Developer (Intern)",
-        //   company: "Valora Infotech",
-        //   company_url: "http://valorainfotech.com/",
-        //   logo_path: "valora.jpg",
-        //   duration: "Oct 2020 - Mar 2021",
-        //   location: "Surat, Gujarat",
-        //   description: `Focus on change request functions in close collaboration with the project manager and team leads.
-        //   Developed new and maintained existing applications.
-        //   Increased productivity and problem-solving technics by 20%.
-        //   We primarily used PERN and MERN Stack. 80% of my work was doing backend development and the remaining 20% was DevOps-related tasks.
-        //   `,
-        //   // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
-        //   color: "#0071C5",
-        // },
         {
-          title: "Full Stack Developer (Freelancer)",
-          company: "NightOwls",
-          company_url: "http://nightowls.company/",
-          logo_path: "nightowls.jpg",
-          duration: "Sep 2020 - Oct 2020",
-          location: "Work From Home",
-          description: `Maintain close contact with the client and team when handling change requests.
-          LAMP Stack was mostly utilised. 40% of my work was doing backend development, 30% of my work was designing database schemas, and 30% of my work was on maintain hosting and user traffics on the website.
+          title: "HOD Data Management",
+          company: "Selecta One",
+          company_url: "https://selecta-one.com/en/",
+          logo_path: "selecta-one.svg",
+          duration: "2023 - Nov 2025",
+          location: "Onsite - Kiambu, Kenya",
+          description: `Managing data operations across three sites in Kenya,one site in Uganda,
+          and teams in Stuttgart and Canaris, using Microsoft Excel, Power Automate, Power Query, Microsoft Access, VBA, advanced
+          Excel functions-including LET, HSTACK, VSTACK and XLOOKUP-alongside Qlik Sense,Python, React and SQL.
+          I lead a team of four on-site data analysts and coordinate data clerks across multiple locations, ensuring consistent data quality,
+          timely reporting and effective support for operational teams providing day-to-day technical troubleshooting and practical
+          digital solutions to keep business processes running smoothly.
+          Major achievement has been establishing a Kenya-based Data Center and data team that supports automation,
+          data management and digital transformation across the wider production network.
           `,
-          // "Created Front end of Yearn Financial Mutual Funds website. also degined simple web application for better user experience, designed DB Schemas as well.",
+          color: "#0071C5",
+        },
+        {
+          title: "Data Analysts and Automations Lead",
+          company: "Syngenta Group",
+          company_url: "https://www.syngenta.co.ke/",
+          logo_path: "syngenta.svg",
+          duration: "Nov 2025 - To Date",
+          location: "Hybrid - Murang'a, Kenya",
+          description: `My work spans the full data management lifecycle from designing practical digital
+          data collection solutions in Smartsheet, Excel, React JS and Python to ensuring data is stored,
+          structured and accessible across Excel, Smartsheet, SQL databases, Power BI Lakehouse and Data Warehouse environments.
+          I build and maintain reliable ETL processes using Power Query, advanced Excel formulas and Python,
+          transforming operational data into consistent, analysis-ready datasets.
+          I also develop Power BI dashboards using DAX and advanced visualizations to deliver clear,
+          actionable reporting that supports production performance, operational decision making and continuous improvement.
+          Major achievements so far have been designing and implementing an ETL pipeline that automates getting data using the Sigrow API,
+          loading to a Power BI Lakehouse with automated Dashboard reload in Power BI to support climate monitoring for all flower and seeds sites,
+          implementing a Python and React Web Application to digitalize operations across HR, Operations, Logistics and Warehouse.
+          `,
           color: "#ee3c26",
         },
       ],
     },
     {
-      title: "Volunteerships",
+      title: "Indutrial Attachment",
       experiences: [
         {
-          title: "Community Lead",
-          company: "Bauddhik-Geeks",
-          company_url: "https://bauddhikgeeks.tech/",
-          logo_path: "bauddhikgeeks.png",
-          duration: "Sep 2021 - Present",
-          location: "Work From Home",
+          title: "IT Attachee",
+          company: "KenGen",
+          company_url: "https://www.kengen.co.ke/",
+          logo_path: "kengen.webp",
+          duration: "May 2018 - Aug 2018",
+          location: "Onsite - West Pokot, Kenya",
           description:
-            "Help Tech-Geeks so they get exposure to the technical world and enlighten their skills. Hence, the programming club highlight all the skills of the individual members and help them develop and groom their skills in a meaningful way. Help community members to learn and grow.",
+            "Applying practical skills on ICT support including Hardware and Software Troubleshooting, CCTV installation and SCADA Maintainance",
           color: "#FBBD18",
-        },
-        {
-          title: "Cross Winter of Code Mentor",
-          company: "CWOC",
-          company_url: "https://crosswoc.ieeedtu.in/",
-          logo_path: "cwoc.png",
-          duration: "Feb 2021 - Present",
-          location: "Work From Home",
-          description:
-            "Mentorship responsibilities were to help students plan the project, review issues and pull requests, ensure smooth progress and help them out when they are stuck.",
-          color: "#4285F4",
-        },
-        // {
-        //   title: "Campus Hustler",
-        //   company: "Skillenza",
-        //   company_url: "https://skillenza.com/",
-        //   logo_path: "skillenza.png",
-        //   duration: "Feb 2021 - Present",
-        //   location: "Work from Home",
-        //   description:
-        //     "Spread Awareness of new Technologies and new Opportunities to Students and Grow Skillenza Community.",
-        //   color: "#196acf",
-        // },
-        {
-          title: "GDG Student Volunteer",
-          company: "Google Developer Groups",
-          company_url: "https://gdg.community.dev/",
-          logo_path: "gdg.png",
-          duration: "Feb 2021 - Present",
-          location: "Work From Home",
-          description:
-            "Google Developer Group Surat Student Volunteer and Member.",
-          color: "#D83B01",
-        },
-        {
-          title: "Postman Student Expert",
-          company: "Postman",
-          company_url: "https://www.postman.com/",
-          logo_path: "postman.png",
-          duration: "Feb 2020 - Present",
-          location: "Work From Home",
-          description:
-            "Google Developer Group Surat Student Volunteer and Member.",
-          color: "#D83B01",
-        },
-        {
-          title: "GitHub Student Developer",
-          company: "GitHub",
-          company_url: "https://github.com/",
-          logo_path: "github.png",
-          duration: "Nov 2019 - Present",
-          location: "Work from Home",
-          description:
-            "Contribute to Open Source Community and Open Source Project.",
-          color: "#040f26",
-        },
-        {
-          title: "Google Local Guide",
-          company: "Google Map",
-          company_url: "https://maps.google.com/localguides/",
-          logo_path: "localguide.png",
-          duration: "Sep 2018 - Present",
-          location: "Work From Home",
-          description:
-            "Day-to-day responsibilities of helping local businesses to spread their business to the world. Helping users by writing reviews about different locations and spaces such as shops, malls, etc.",
-          color: "#D83B01",
-        },
-        {
-          title: "E. F. I. Student Volunteer",
-          company: "ENVIRONMENTALIST FOUNDATION OF INDIA",
-          company_url: "https://indiaenvironment.org/",
-          logo_path: "efi.png",
-          duration: "Apr 2017 - Present",
-          location: "Work From Home",
-          description:
-            "Take time out over weekends to join a gang of nation builders, nature enthusiasts to conserve what is left.",
-          color: "#5a900f",
         },
       ],
     },
@@ -539,7 +320,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects make use of a vast variety of latest technology tools. My best experience is to create NodeJS Backend Projects, Python Scripts, and React Project. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
+    "Available upon request due to data privacy, for public projects please review my github account",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -547,15 +328,15 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "harikrushn.jpg",
+    profile_image_path: "eotobi.jpg",
     description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
+      "Kindly contact me through the links provided below, I will contact you ASAP. Thanks :) ",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
-      "I don't blog frequently but when I do something awesome, I do try to document it so it can be helpful to others. I write on Twitter.",
-    link: "https://twitter.com/Harikrushn9",
+      "I don't blog frequently but when I do something awesome, I share on github for personal rojects for work projects I do a documentation. I write on Twitter sometimes.",
+    link: "https://x.com/eotoby",
     avatar_image_path: "blogs_image.svg",
   },
 };
@@ -564,10 +345,10 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "Keep Calm and Carry On",
-      url: "https://github.com/harikanani/Keep-Calm-and-Carry-On.github.io",
+      name: "rescue-robots-simulation",
+      url: "https://github.com/eotobi/rescue-robots-simulation",
       description:
-        "This platform enables users to practice Augmented Reality meditation, play stress burster games, track task completion and engage in motivational exercises to cope with stress and anxiety at work.  ",
+        "A simple Python model, consisting of three agent types: Explorer drones, Firstaid Terrain Robots, and Patients. The Explorer drones fly over the drid at random in search of patients. When they find one checks if condition is critical if so call the Firstaid Terrain Robots to deliver first aid supplies. If not, the Explorer drones keeps searching.",
       languages: [
         {
           name: "HTML5",
@@ -578,656 +359,82 @@ const projects = {
           iconifyClass: "logos-css-3",
         },
         {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "Augmented Reality",
-          iconifyClass: "bi:badge-ar",
-        },
+          name: "Python",
+          iconifyClass: "logos-python",
+        }
       ],
       links: [
         {
           name: "Github",
-          url: "https://github.com/harikanani/Keep-Calm-and-Carry-On.github.io",
+          url: "https://github.com/eotobi/rescue-robots-simulation",
           iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/keep-calm-and-carry-on",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
-        {
-          name: "Live Demo",
-          url:
-            "https://akshitagupta15june.github.io/Keep-Calm-and-Carry-On.github.io/",
-          iconifyClass: "mdi:web",
-        },
+        }
       ],
     },
     {
       id: "1",
-      name: "YOG4LIFE SOCIAL APP",
-      url: "https://github.com/kevalvavaliya/Yog4Life",
+      name: "Python-React Microservices",
+      url: "https://github.com/eotobi/python-react-microservices",
       description:
-        "An app for helping people their healthy life. Yog4Life Has a feed feature which is help to get information from the folks, Yog4Life has an anonymous chat room to get connected with the world.",
+        "A project that a system design prototype for a Django and Flask REST frameworks that expose admin and product APIs, specially crafted for integration with React frontend applications. The admin functionalities are implemented using Django, while Flask handles product-related operations. These components communicate seamlessly through a RabbitMQ queue, ensuring efficient and robust data flow from frontend to the 2 MySql databases",
       languages: [
         {
-          name: "Flutter",
-          iconifyClass: "logos-flutter",
-        },
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
+          name: "Python",
+          iconifyClass: "logos-python",
+        }
       ],
       links: [
         {
           name: "Github",
-          url: "https://github.com/kevalvavaliya/Yog4Life",
+          url: "https://github.com/eotobi/python-react-microservices",
           iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devfolio",
-          url: "https://devfolio.co/projects/yoglife-b20d",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
+        }
       ],
     },
     {
       id: "2",
-      name: "Adoptisity",
-      url: "https://github.com/kevalvavaliya/Adoptisity",
+      name: "Memory Game",
+      url: "https://github.com/eotobi/memory_game",
       description:
-        "Our mission is to spread awareness about the benefits of adoption and to support LGBT families so that everyone has the chance to have a loving home environment.",
+        "A memory game developed in React JS",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "logos-html-5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "logos-css-3",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "Wix",
-          iconifyClass: "bxl:wix",
-        },
+          name: "React JS",
+          iconifyClass: "logos-reactjs",
+        }
       ],
       links: [
         {
           name: "Github",
-          url: "https://github.com/harikanani/Adoptisity",
+          url: "https://github.com/eotobi/memory_game",
           iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/adoptisity",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
-        {
-          name: "Live Demo",
-          url: "https://rajmahadevwala1.wixsite.com/adoptisity",
-          iconifyClass: "mdi:web",
-        },
+        }
       ],
     },
-    {
+        {
       id: "3",
-      name: "FinSplit",
-      url: "https://github.com/rajmahadev8/Fin-Split",
+      name: "Memory Game",
+      url: "https://github.com/eotobi/book-tracking-app",
       description:
-        "Split your bills with your friends without any hassle. Manage Group Expenses, Track your expenses, and much more.",
+        "A fulstack Fast API, Next JS web app for tracking book reading. On this website, users can Add a new book entry with just a title, transition a book to the 'reading' state. Move a book to the 'to-read' column. Shift a book to the 'completed' column. Delete any book entry. Book Entry should only contain book title and nothing else. There is no need to add editing functionality.",
       languages: [
         {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/rajmahadev8/Fin-Split",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/finsplit",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
-      ],
-    },
-    {
-      id: "4",
-      name: "Emosic",
-      url: "https://github.com/kevalvavaliya/Emosic",
-      description:
-        "An app that plays music according to your mood. Created a playlist management UI and used SpotifyAPI to control player client based on mood detection using ml model.",
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "logos-html-5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "logos-css-3",
-        },
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/kevalvavaliya/Emosic",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/emosic",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
-      ],
-    },
-    {
-      id: "5",
-      name: "Fileblok",
-      url: "https://github.com/harikanani/Fileblok",
-      description:
-        "Keep your projects moving with seamless transfer experice. FileBlok is a file transfer app that allows you to transfer files from one device to another without any hassle. We built this app using Flutter, Node.js and StoryBlok.",
-      languages: [
-        {
-          name: "Flutter",
-          iconifyClass: "logos-flutter",
-        },
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "Storyblok",
-          iconifyClass: "logos-storyblok-icon",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/Fileblok",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Devpost",
-          url: "https://devpost.com/software/fileblok",
-          iconifyClass: "fluent:window-dev-edit-20-filled",
-        },
-      ],
-    },
-    {
-      id: "6",
-      name: "BAUDDIK-GEEKS PORTFOLIO",
-      url: "https://github.com/Bauddhik-Geeks/Bauddhik-Geeks.github.io",
-      description:
-        "Awesome Community Portfolio website for Bauddhik-Geeks community",
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/Bauddhik-Geeks/Bauddhik-Geeks.github.io",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Live Demo",
-          url: "https://bauddhikgeeks.co/",
-          iconifyClass: "mdi:web",
-        },
-      ],
-    },
-    {
-      id: "7",
-      name: "Votechain",
-      url: "https://github.com/abhigoyani/votechain",
-      description:
-        "Awesome Community Portfolio website for Bauddhik-Geeks community",
-      languages: [
-        {
-          name: "Flask",
-          iconifyClass: "logos-flask",
-        },
-        {
-          name: "Python",
+          name: "Fast API",
           iconifyClass: "logos-python",
         },
         {
-          name: "HTML5",
-          iconifyClass: "logos-html-5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "logos-css-3",
-        },
-        {
-          name: "MongoDB",
-          iconifyClass: "logos-mongodb-icon",
-        },
+          name: "React JS",
+          iconifyClass: "logos-reactjs",
+        }
       ],
       links: [
         {
           name: "Github",
-          url: "https://github.com/abhigoyani/votechain",
+          url: "https://github.com/eotobi/book-tracking-app",
           iconifyClass: "ri:github-fill",
-        },
+        }
       ],
-    },
-    {
-      id: "8",
-      name: "Swag Store",
-      url: "https://github.com/harikanani/e-commerce-frontend",
-      description:
-        "An E-commerce website built using MERN[Mongo, Express, React, Node] stack and we have also added stripe payment gateway integration [in test mode].",
-      languages: [
-        {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "MedusaJS",
-          iconifyClass: "logos-medusa-icon",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/e-commerce-frontend",
-          iconifyClass: "ri:github-fill",
-        },
-      ],
-    },
-    {
-      id: "9",
-      name: "node-blockchain",
-      url: "https://github.com/harikanani/node-blockchain",
-      description:
-        "A simple blockchain and cryptocurrency wallet implemented in Node.js and TypeScript (for learning purposes).",
-      languages: [
-        {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "TypeScript",
-          iconifyClass: "skill-icons:typescript",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/node-blockchain",
-          iconifyClass: "ri:github-fill",
-        },
-      ],
-    },
-    {
-      id: "10",
-      name: "Know Me Well",
-      url: "https://github.com/harikanani/personal-portfolio",
-      description:
-        "A simple command line interface based quiz app to know more about me :).",
-      languages: [
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "Repl.it",
-          iconifyClass: "logos-replit-icon",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/personal-portfolio",
-          iconifyClass: "ri:github-fill",
-        },
-      ],
-    },
-    {
-      id: "11",
-      name: "Bloggify",
-      url: "https://github.com/harikanani/Bloggify",
-      description: "A Simple REST API for Blog Application.",
-      languages: [
-        {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/Bloggify",
-          iconifyClass: "ri:github-fill",
-        },
-      ],
-    },
-    {
-      id: "12",
-      name: "Stargazzers",
-      url: "https://github.com/harikanani/stargazers",
-      description: "An Unofficial API for GitHub Repo Stars Count",
-      languages: [
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/stargazers",
-          iconifyClass: "ri:github-fill",
-        },
-      ],
-    },
-    {
-      id: "13",
-      name: "GitHub Theme Portfolio",
-      url: "https://github.com/harikanani/harikanani.github.io",
-      description:
-        "A Personal Portfolio Website that showcases my work and experience. which is hosted on Github Pages.",
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "SCSS",
-          iconifyClass: "vscode-icons:file-type-scss2",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/harikanani.github.io",
-          iconifyClass: "ri:github-fill",
-        },
-        {
-          name: "Live Demo",
-          url: "https://harikanani.github.io/",
-          iconifyClass: "mdi:web",
-        },
-      ],
-    },
-    // {
-    //   id: "6",
-    //   name: "Automate Attendace",
-    //   url: "https://github.com/harikanani/Node_Python",
-    //   description: "Automation of Online Attendance using node js and python",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //   ],
-    //   links: [
-    //     {
-    //       name: "Github",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //     {
-    //       name: "Devfolio",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "7",
-    //   name: "Automate Discord Bot",
-    //   url: "https://github.com/harikanani/AutomateDiscordBot",
-    //   description:
-    //     "A Discord Bot to send Automatic messages to serer channel in regular time difference.",
-    //   languages: [
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //     {
-    //       name: "Python Selenium",
-    //       iconifyClass: "logos-selenium",
-    //     },
-    //     {
-    //       name: "Chromium Browser",
-    //       iconifyClass: "openmoji-chromium",
-    //     },
-    //   ],
-    //   links: [
-    //     {
-    //       name: "Github",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //     {
-    //       name: "Devfolio",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "8",
-    //   name: "Flask Blog",
-    //   url: "https://github.com/harikanani/flask_blog",
-    //   description: "A Simple Blog Web Application made using Flask Framework",
-    //   languages: [
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //     {
-    //       name: "Flask",
-    //       iconifyClass: "cib-flask",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "vscode-icons:file-type-html",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "vscode-icons:file-type-css",
-    //     },
-    //   ],
-    //   links: [
-    //     {
-    //       name: "Github",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //     {
-    //       name: "Devfolio",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "9",
-    //   name: "Netflix top series",
-    //   url: "https://github.com/harikanani/netflix-top-series",
-    //   description: "List of Top Netflix Series which is deployed to vercel.",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //   ],
-    //   links: [
-    //     {
-    //       name: "Github",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //     {
-    //       name: "Devfolio",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //   ],
-    // },
-    {
-      id: "10",
-      name: "COVID-19 Tracker",
-      url: "https://github.com/harikanani/Covid19TrackerReact",
-      description:
-        "Simple Covid-19 Tracker made using React and deployed to Vercel.",
-      languages: [
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "HTML5",
-          iconifyClass: "logos-html-5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "logos-css-3",
-        },
-      ],
-      links: [
-        {
-          name: "Github",
-          url: "https://github.com/harikanani/Covid19TrackerReact",
-          iconifyClass: "ri:github-fill",
-        },
-      ],
-    },
-    // {
-    //   id: "11",
-    //   name: "Food Order Static Website",
-    //   url: "https://github.com/harikanani/food-order-website",
-    //   description:
-    //     "A simple static website related to food restaurants service. this is reasponsive as well.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "PHP",
-    //       iconifyClass: "logos-php",
-    //     },
-    //   ],
-    //   links: [
-    //     {
-    //       name: "Github",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //     {
-    //       name: "Devfolio",
-    //       url: "",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "12",
-    //   name: "NFT Launchpad",
-    //   url: "https://deliquescent-cents.000webhostapp.com/",
-    //   description: "NFT Launchpad crypto site portfolio",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //   ],
-    //   links: [
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/harikanani/nft-launchpad",
-    //       iconifyClass: "ri:github-fill",
-    //     },
-    //   ],
-    // },
+    },       
   ],
 };
 

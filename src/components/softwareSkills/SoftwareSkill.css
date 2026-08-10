@@ -30,6 +30,13 @@
   transform: translateY(-3px);
 }
 
+.software-skill-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
+
 @media (max-width: 900px) {
   .dev-icons {
     justify-content: center;

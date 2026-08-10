@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { themes } from "./theme.js";
 import { GlobalStyles } from "./global.js";
 
+
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 

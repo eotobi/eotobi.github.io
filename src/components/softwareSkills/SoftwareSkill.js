@@ -11,20 +11,22 @@ function SoftwareSkill(props) {
             return (
               <OverlayTrigger
                 key={logo.skillName}
-                placement={"top"}
+                placement="top"
                 overlay={
-                  <Tooltip id={`tooltip-top`}>
+                  <Tooltip id={`tooltip-${logo.skillName}`}>
                     <strong>{logo.skillName}</strong>
                   </Tooltip>
                 }
               >
                 <li className="software-skill-inline" name={logo.skillName}>
-                  <span
-                    className="iconify"
-                    data-icon={logo.fontAwesomeClassname}
-                    style={logo.style}
-                    data-inline="false"
-                  ></span>
+                  <img
+                    src={logo.iconUrl}
+                    alt={`${logo.skillName} icon`}
+                    className="software-skill-icon"
+                    onError={(event) => {
+                      event.currentTarget.style.display = "none";
+                    }}
+                  />
                 </li>
               </OverlayTrigger>
             );
