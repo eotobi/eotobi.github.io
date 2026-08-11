@@ -217,7 +217,8 @@ const certifications = {
         "https://drive.google.com/...",
       alt_name: "ALX Certification",
       // color_code: "#2AAFED",
-      color_code: "#47A048",
+      // color_code: "#47A048",
+      color_code: "#ffffff",
     },
     {
       title: "Yellow Belt",
@@ -226,7 +227,8 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/...",
       alt_name: "hackathon",
-      color_code: "#E2405F",
+      // color_code: "#E2405F",
+      color_code: "#ffffff",
     },
   ],
 };
@@ -246,7 +248,7 @@ const experience = {
           title: "Data Analyst",
           company: "Selecta One",
           company_url: "https://selecta-one.com/en/",
-          logo_path: "selecta-one.svg",
+          logo_path: "selecta-one.png",
           duration: "2022 - 2023",
           location: "Onsite - Kiambu, Kenya",
           description: `Implemented data tools in Excel that support data entry, processing and visualization using
@@ -335,7 +337,7 @@ const contactPageData = {
   blogSection: {
     title: "Blogs",
     subtitle:
-      "I don't blog frequently but when I do something awesome, I share on github for personal rojects for work projects I do a documentation. I write on Twitter sometimes.",
+      "I don't blog frequently but when I do something awesome, I share on github for personal projects and do a documentation on work projects. I write on Twitter sometimes.",
     link: "https://x.com/eotoby",
     avatar_image_path: "blogs_image.svg",
   },
