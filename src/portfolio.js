@@ -261,7 +261,7 @@ const experience = {
           title: "HOD Data Management",
           company: "Selecta One",
           company_url: "https://selecta-one.com/en/",
-          logo_path: "selecta-one.svg",
+          logo_path: "selecta-one.png",
           duration: "2023 - Nov 2025",
           location: "Onsite - Kiambu, Kenya",
           description: `Managing data operations across three sites in Kenya,one site in Uganda,
@@ -279,7 +279,7 @@ const experience = {
           title: "Data Analysts and Automations Lead",
           company: "Syngenta Group",
           company_url: "https://www.syngenta.co.ke/",
-          logo_path: "syngenta.svg",
+          logo_path: "syngenta.png",
           duration: "Nov 2025 - To Date",
           location: "Hybrid - Murang'a, Kenya",
           description: `My work spans the full data management lifecycle from designing practical digital
@@ -304,7 +304,7 @@ const experience = {
           title: "IT Attachee",
           company: "KenGen",
           company_url: "https://www.kengen.co.ke/",
-          logo_path: "kengen.webp",
+          logo_path: "kengen.png",
           duration: "May 2018 - Aug 2018",
           location: "Onsite - West Pokot, Kenya",
           description:
@@ -413,7 +413,7 @@ const projects = {
     },
         {
       id: "3",
-      name: "Memory Game",
+      name: "Book Tracking",
       url: "https://github.com/eotobi/book-tracking-app",
       description:
         "A fulstack Fast API, Next JS web app for tracking book reading. On this website, users can Add a new book entry with just a title, transition a book to the 'reading' state. Move a book to the 'to-read' column. Shift a book to the 'completed' column. Delete any book entry. Book Entry should only contain book title and nothing else. There is no need to add editing functionality.",
