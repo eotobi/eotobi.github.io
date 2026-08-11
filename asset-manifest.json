@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1631af7d.css",
-    "main.js": "/static/js/main.9dc5b96a.js",
+    "main.js": "/static/js/main.450fb20b.js",
     "static/media/localguide.gif": "/static/media/localguide.e26297ddb1866fabed6a.gif",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.decfdcb63165be4a18b6.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.d21386c92d7f4fbf03dc.svg",
@@ -57,10 +57,10 @@
     "static/media/syngenta.svg": "/static/media/syngenta.ee173bf9281b71590d77.svg",
     "index.html": "/index.html",
     "main.1631af7d.css.map": "/static/css/main.1631af7d.css.map",
-    "main.9dc5b96a.js.map": "/static/js/main.9dc5b96a.js.map"
+    "main.450fb20b.js.map": "/static/js/main.450fb20b.js.map"
   },
   "entrypoints": [
     "static/css/main.1631af7d.css",
-    "static/js/main.9dc5b96a.js"
+    "static/js/main.450fb20b.js"
   ]
 }
