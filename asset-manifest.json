@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1631af7d.css",
-    "main.js": "/static/js/main.01505baa.js",
+    "main.js": "/static/js/main.9dc5b96a.js",
     "static/media/localguide.gif": "/static/media/localguide.e26297ddb1866fabed6a.gif",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.decfdcb63165be4a18b6.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.d21386c92d7f4fbf03dc.svg",
@@ -22,6 +22,7 @@
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.3ef4f1acb44a2df412bf.woff",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.dc957891d535aa198135.woff",
+    "static/media/kengen.png": "/static/media/kengen.d8e1c3f9d250e0ad527d.png",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4a83f63fd7dd55c4ca85.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.1c638e5f7632ea819e77.woff2",
     "static/media/ssgandhy.png": "/static/media/ssgandhy.35fb38c10a33301bb011.png",
@@ -56,10 +57,10 @@
     "static/media/syngenta.svg": "/static/media/syngenta.ee173bf9281b71590d77.svg",
     "index.html": "/index.html",
     "main.1631af7d.css.map": "/static/css/main.1631af7d.css.map",
-    "main.01505baa.js.map": "/static/js/main.01505baa.js.map"
+    "main.9dc5b96a.js.map": "/static/js/main.9dc5b96a.js.map"
   },
   "entrypoints": [
     "static/css/main.1631af7d.css",
-    "static/js/main.01505baa.js"
+    "static/js/main.9dc5b96a.js"
   ]
 }
